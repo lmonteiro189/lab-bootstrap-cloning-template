@@ -2,32 +2,87 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <link rel="stylesheet" src="style/index.css">
     <title>Significa</title>
   </head>
   <body>
-    <!--
-      The following comment ensures that the prettier extension
-      does not mis-format this specific file
-    -->
-    <!-- prettier-ignore -->
-    Showcase
-    Services
-    About
-    Careers
-    Labs
-    Contact
-    Your go-to digital agency
-    Significa is a digital design-led agency mainly focused on Product Development.
-    Oopsie for users — Your favourite food, one click away!
-    Business Analysis, Product Management, Consultancy & 5 others
-    Opennode — Bitcoin, for everyday.
-    UI/UX, Front End, Front End
-    AKASHA — Open systems to expand our collective mind.
-    UI/UX, Front End, Illustration
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 mb-2 bg-white text-dark">
+
+          <svg width="96" height="25" xmlns="http://www.w3.org/2000/svg" class="sc-bdVaJa ghULDC">
+            <g fill-rule="evenodd">
+              <path
+                d="M0 13.514h3.792c.052 1.134.955 2.14 2.657 2.14 1.522 0 2.58-.722 2.606-1.882.025-.8-.336-1.495-2.142-2.01l-2.14-.593C.85 9.957.18 7.663.18 6.065c0-3.17 2.708-5.31 6.113-5.31 3.431 0 6.01 2.037 6.01 5.439H8.54c0-1.186-.8-2.01-2.296-2.01-1.316 0-2.296.721-2.296 1.778 0 .464.18 1.315 1.909 1.804l2.115.67c4.308 1.238 4.927 3.66 4.876 5.362-.052 3.53-3.25 5.206-6.398 5.206C2.58 19.004 0 16.71 0 13.514zM18.55 6.684V18.72h-3.56V6.684zM14.525 2.225c0-1.186 1.032-2.088 2.244-2.088 1.213 0 2.193.902 2.193 2.088 0 1.185-.98 2.113-2.193 2.113-1.212 0-2.244-.928-2.244-2.113zM23.775 19.571c.413 1.109 1.832 1.933 3.044 1.933 2.734 0 3.483-1.881 3.328-4.278-.568 1.108-2.116 1.752-3.612 1.752-3.095 0-6.01-2.448-6.01-6.237 0-3.866 2.915-6.315 6.01-6.315 1.496 0 3.018.644 3.612 1.753V6.684h3.482v10.361c0 5.181-2.528 7.681-6.81 7.681-2.657 0-4.927-1.495-5.933-3.737.903-.438 1.986-.98 2.889-1.418zm6.294-6.907c0-1.805-1.418-2.836-2.915-2.836-1.522 0-2.889 1.134-2.889 2.836 0 1.804 1.367 2.938 2.89 2.938 1.47 0 2.914-1.186 2.914-2.938zM39.51 12.354v6.367h-3.587V6.684h3.586v1.752c.645-1.211 2.064-2.01 3.483-2.01 2.708 0 4.41 1.675 4.41 5.103v7.192h-3.585v-6.418c0-1.598-.877-2.397-2.09-2.397-1.263 0-2.218.618-2.218 2.448zM53.275 6.684V18.72h-3.56V6.684zM49.25 2.225c0-1.186 1.033-2.088 2.245-2.088 1.212 0 2.193.902 2.193 2.088 0 1.185-.98 2.113-2.193 2.113-1.212 0-2.244-.928-2.244-2.113zM63.288.137v3.428h-.593c-1.238 0-1.831.876-1.831 2.294v.825h2.424v2.835h-2.424v9.202h-3.612V9.519h-2.27V6.684h2.27v-.825c0-3.686 1.986-5.722 5.443-5.722h.593zM68.658 6.684V18.72h-3.56V6.684zM64.634 2.225c0-1.186 1.031-2.088 2.244-2.088 1.212 0 2.193.902 2.193 2.088 0 1.185-.98 2.113-2.193 2.113s-2.244-.928-2.244-2.113zM70.443 12.664c0-3.79 3.095-6.238 6.552-6.238 2.141 0 4.076.928 5.237 2.552l-2.915 2.087c-.49-.773-1.393-1.211-2.322-1.211-1.522 0-2.992 1.083-2.992 2.81 0 1.726 1.47 2.886 2.992 2.886.929 0 1.832-.438 2.322-1.211l2.915 2.062c-1.135 1.624-3.07 2.577-5.237 2.577-3.457 0-6.552-2.526-6.552-6.314zM92.327 18.72v-1.365c-.774 1.16-2.58 1.598-3.508 1.598-3.07 0-6.14-2.397-6.14-6.264 0-3.866 3.07-6.263 6.14-6.263.773 0 2.58.258 3.508 1.598v-1.34h3.56V18.72h-3.56zm-5.933-6.03c0 1.726 1.522 2.86 3.018 2.86 1.47 0 2.915-1.056 2.915-2.86 0-1.805-1.445-2.862-2.915-2.862-1.496 0-3.018 1.134-3.018 2.861z">
+              </path>
+            </g>
+          </svg>
+
+      <div class="collapse navbar-collapse p-3 mb-2 bg-white text-dark" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Labs</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-3 mb-2 bg-white text-dark">
+    <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-white text-dark">
+        <div class="container">
+          <h1 class="display-4 ">Your go-to digital agency</h1>
+        </div>
+      </div>
+      <div class="card border-0" style="width: 40%;">
+          <div class="card-body">
+            <p class="card-text">Significa is a digital design-led agency mainly focused on Product Development.</p>
+          </div>
+      </div>
+    </div>
+    <div class="card-deck col px-lg-5 m-md-5">
+        <div class="card border-0">
+          <img src="/images/2.png" class="card-img-top shadow-sm p-3 mb-5 bg-white rounded" alt="...">
+          <div class="card-body">
+            <p class="card-text">Oopsie for users — Your favourite food, one click away!</p>
+            <p class="card-text"><small class="text-muted">Business Analysis, Product Management, Consultancy & 5 others</small></p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img src="/images/1.png" class="card-img-top shadow-sm p-3 mb-5 bg-white rounded" alt="...">
+          <div class="card-body">
+            <p class="card-text">Opennode — Bitcoin, for everyday.</p>
+            <p class="card-text"><small class="text-muted">UI/UX, Front End, Front End</small></p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img src="/images/3.png" class="card-img-top shadow-sm p-3 mb-5 bg-white rounded" alt="...">
+          <div class="card-body">
+            <p class="card-text">AKASHA — Open systems to expand our collective mind.</p>
+            <p class="card-text"><small class="text-muted">UI/UX, Front End, Illustration</small></p>
+          </div>
+        </div>
+      </div>
+    
+
+    
+    
     We build digital products
     Having a design-led approach to what we do defines who we are. We take on products from inception to launch, from business model to people's pocket, from wireframe to continuous deployment.
     Strategy
@@ -78,5 +133,8 @@
     Coletiv
     Adamant
     Follow us
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
